@@ -9,9 +9,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/a8m/rql"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/sqlite"
+
+	"github.com/junitechnology/rql"
 )
 
 var (

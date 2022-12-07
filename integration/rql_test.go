@@ -8,9 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/a8m/rql"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
+
+	"github.com/junitechnology/rql"
 )
 
 var (

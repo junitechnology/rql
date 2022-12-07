@@ -1,16 +1,16 @@
 <p align="center">
 	<img src="assets/logo.png" height="100" border="0" alt="RQL">
 	<br/>
-	<a href="https://godoc.org/github.com/a8m/rql">
+	<a href="https://godoc.org/github.com/junitechnology/rql">
 		<img src="https://img.shields.io/badge/api-reference-blue.svg?style=flat-square" alt="GoDoc">
 	</a>
 	<a href="LICENSE">
 		<img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="LICENSE">
 	</a>
-	<a href="https://app.circleci.com/pipelines/github/a8m/rql?branch=master">
-		<img src="https://img.shields.io/circleci/build/github/a8m/rql?style=flat-square" alt="Build Status">
-	</a>
 </p>
+
+NOTE: this is a for of original [RQL](https://github.com/a8m/rql) project, with multiple fixes and added search feature.
+It's currently diverged from original project to the point, that it's unlikely to be merged back.
 
 RQL is a resource query language for REST. It provides a simple and light-weight API for adding dynamic querying capabilities to web-applications that use SQL-based database. It functions as the connector between the HTTP handler and the DB engine, and manages all validations and translations for user inputs.
 
@@ -106,7 +106,7 @@ Go to [examples/simple](examples/simple.go) to see the full working example.
 
 
 ## API
-In order to start using rql, you need to configure your parser. Let's go over a basic example of how to do this. For more details and updated documentation, please checkout the [godoc](https://godoc.org/github.com/a8m/rql/#Config).  
+In order to start using rql, you need to configure your parser. Let's go over a basic example of how to do this. For more details and updated documentation, please checkout the [godoc](https://godoc.org/github.com/junitechnology/rql/#Config).  
 There are two options to build a parser, `rql.New(rql.Config)`, and `rql.MustNew(rql.Config)`. The only difference between the two is that `rql.New` returns an error if the configuration is invalid, and `rql.MustNew` panics.
 ```go
 // we use rql.MustPanic because we don't want to deal with error handling in top level declarations.
